@@ -6,7 +6,7 @@
     <artifactId>spring-ws-core-reactor</artifactId>
     <version>0.0.1</version>
     <name>spring-ws-core-reactor</name>
-    <description>spring-ws-core-reactor</description>
+    <description>基于 spring-ws-core 支持 reactor</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -102,7 +102,7 @@
     </licenses>
 
     <scm>
-        <tag>main</tag>
+        <tag>v0.0.1</tag>
         <url>git@github.com:xzxiaoshan/spring-ws-core-reactor.git</url>
         <connection>scm:git:git@github.com:xzxiaoshan/spring-ws-core-reactor.git</connection>
         <developerConnection>scm:git:git@github.com:xzxiaoshan/spring-ws-core-reactor.git</developerConnection>
