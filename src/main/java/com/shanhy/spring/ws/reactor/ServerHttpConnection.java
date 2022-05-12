@@ -44,6 +44,11 @@ public class ServerHttpConnection extends AbstractReceiverConnection
     /**
      * Constructs a new servlet connection with the given {@code HttpServletRequest} and
      * {@code HttpServletResponse}.
+     *
+     * @param request ServerHttpRequest
+     * @param response ServerHttpResponse
+     * @param requestInputStream InputStream
+     * @param responseOutputStream OutputStream
      */
     protected ServerHttpConnection(ServerHttpRequest request, ServerHttpResponse response,
                                    InputStream requestInputStream, OutputStream responseOutputStream) {

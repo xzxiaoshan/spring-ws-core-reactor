@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.xzxiaoshan</groupId>
     <artifactId>spring-ws-core-reactor</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>spring-ws-core-reactor</name>
     <description>spring-ws-core-reactor</description>
 
@@ -57,7 +57,64 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <charset>UTF-8</charset>
+                    <docencoding>UTF-8</docencoding>
+                    <!-- 禁用注释检查 -->
+                    <additionalJOptions>
+                        <additionalJOption>-Xdoclint:none</additionalJOption>
+                    </additionalJOptions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <tag>main</tag>
+        <url>git@github.com:xzxiaoshan/spring-ws-core-reactor.git</url>
+        <connection>scm:git:git@github.com:xzxiaoshan/spring-ws-core-reactor.git</connection>
+        <developerConnection>scm:git:git@github.com:xzxiaoshan/spring-ws-core-reactor.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>shanhy</name>
+            <email>365384722@qq.com</email>
+            <organization>shanhy</organization>
+            <url>https://shanhy.blog.csdn.net</url>
+        </developer>
+    </developers>
 
 </project>
