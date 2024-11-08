@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.xzxiaoshan</groupId>
     <artifactId>spring-ws-core-reactor</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>spring-ws-core-reactor</name>
     <url>https://github.com/xzxiaoshan/spring-ws-core-reactor</url>
     <description>基于 spring-ws-core 支持 reactor</description>
@@ -99,6 +99,23 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <!-- 发布插件 -->
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.6.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <!--填写maven的setting配置文件中server中的id-->
+                    <publishingServerId>central</publishingServerId>
+                    <!--<tokenAuth>true</tokenAuth>-->
+                    <!-- 若要自动发布，添加以下配置 -->
+                    <!--<autoPublish>true</autoPublish>-->
+                    <!-- 一直等到发布完成 -->
+                    <!--<waitUntil>published</waitUntil>-->
+                </configuration>
             </plugin>
         </plugins>
     </build>
