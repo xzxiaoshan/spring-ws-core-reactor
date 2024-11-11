@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.xzxiaoshan</groupId>
     <artifactId>spring-ws-core-reactor</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <name>spring-ws-core-reactor</name>
     <url>https://github.com/xzxiaoshan/spring-ws-core-reactor</url>
     <description>基于 spring-ws-core 支持 reactor</description>
